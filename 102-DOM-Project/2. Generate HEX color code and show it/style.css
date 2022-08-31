@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1{
+    text-align: center;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    color: black;
+}
+
+.output{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    height: 20px;
+    padding: 10px;
+    margin: 20px auto;
+    font-family: Poppins;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    -webkit-text-stroke: 0.2px rgb(255, 255, 255);
+    font-weight: bold;
+
+}
+
+.input-box:focus{
+    outline: none;
+}
+
+.change-button{
+    padding: 8px 20px;
+    margin: 0 auto;
+    display: flex;
+    font-family: Poppins;
+    font-size: 16px;
+    transition: .3s;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.change-button:hover{
+    transform: translate(-6px, -6px);
+    transition: .3s;
+}
