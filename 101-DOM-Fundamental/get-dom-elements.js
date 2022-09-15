@@ -3,8 +3,8 @@
 //getElementById
 const idVariable = document.getElementById("Id")
 
-//getElementByClassName
-const classVariable = document.getElementByClassName("class")
+//getElementsByClassName
+const classVariable = document.getElementsByClassName("class")
 
 //getElementsByTagName
 const tagVariable = document.getElementsByTagName("Tag")

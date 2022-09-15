@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Examples</title>
+</head>
+<body>
+
+    <h2 id="dom-id">DOM ID</h2>
+
+    <div class="">
+        <h2 class="dom-class">DOM Class 1</h2>
+        <h2 class="dom-class">DOM Class 2</h2>
+    </div>
+
+    <h2 class="dom-query">DOM Query</h2>
+
+    <div class="list-items">
+        <li class="dom-query-all">List 1</li>
+        <li class="dom-query-all">List 2</li>
+    </div>
+
+    <h3>DOM Tag Element</h3>
+    
+
+
+
+    <script>
+        //DOM getElementById
+        document.getElementById("dom-id").style.color = "red"
+
+        //DOM getElementsByClassName
+        let el = document.getElementsByClassName("dom-class")
+        for(let i = 0; i <el.length; i++){
+            el[i].style.color = "blue"
+        }
+
+        //DOM querySelector
+        let querySelector = document.querySelector('.dom-query')
+        querySelector.innerHTML = "I am Query Selector"
+
+        //DOM querySelectorAll
+        let querySelectorAll = document.querySelectorAll('.dom-query-all')
+        for(let i = 0; i < querySelectorAll.length; i++){
+            querySelectorAll[i].style.fontSize = '2rem'
+        }
+
+        //DOM getElementsByTagName
+        let domTag = document.getElementsByTagName('h3')
+        for(let i = 0; i < domTag.length; i++){
+            domTag[i].innerHTML = 'DOM Tag Manipulated'
+        }
+
+    </script>
+</body>
+</html>
