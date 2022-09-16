@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header">Document Header</h1>
+
+        <h3 class="side-bar">Document Sidebar</h3>
+
+        <div class="list-item">
+            <li class="list1">list1</li>
+            <li class="list2">list2</li>
+            <li class="list3">list3</li>
+        </div>
+    </div>
+
+
+    <script>
+        //Parent Node Traversal
+        let container = document.querySelector('.container')
+
+        //get all html docs
+        console.log(container.parentNode.parentNode)
+        console.log(container.parentNode.parentElement)
+
+        //
+        let html = document.documentElement
+        console.log(html.parentNode)
+        console.log(html.parentElement)
+    </script>
+</body>
+</html>

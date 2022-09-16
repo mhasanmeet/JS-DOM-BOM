@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Modify</title>
+</head>
+<body>
+
+    <h3 id="innerDOM">
+        <span>Lorem</span>
+        ipsum dolor sit amet.
+   </h3>
+
+   <h2 class="attribute" id="attribute">Modify Attribute</h2>
+
+   <h3 id="attribute-Id">Attribute Id</h3>
+
+   <h3 class="remove-el">Removed Element</h3>
+
+   <Script>
+
+        //innerDOM
+        let innerDOM = document.querySelector('#innerDOM')
+            
+            console.log(innerDOM.innerText)
+            console.log(innerDOM.textContent)
+            console.log(innerDOM.innerHTML)
+
+        //------------------------
+
+        let attributeClass = document.querySelector('.attribute')
+        
+        //Add new Attribute Id
+        attributeClass.setAttribute('id', 'newAttribute')
+
+        //Remove attribute Id
+        attributeClass.removeAttribute('id')
+
+        //console.log get attribute
+        let attributeId = document.querySelector('#attribute-Id')
+        console.log(attributeId.getAttribute('id'));
+
+        //Add class
+        attributeId.classList.add('attribute-class')
+
+        //remove class
+        attributeId.remove('attribute-class')
+
+        //Remove Element
+        let rmEl = document.querySelector('.remove-el')
+        rmEl.remove()
+
+   </Script>
+</body>
+</html>

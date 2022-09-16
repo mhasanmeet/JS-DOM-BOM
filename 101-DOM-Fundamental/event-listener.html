@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Event Listener</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="header">Document Header</h1>
+
+        <h3 class="side-bar">Document Sidebar</h3>
+
+        <div class="list-item">
+            <li class="list1">list1</li>
+            <li class="list2">list2</li>
+            <li class="list3">list3</li>
+        </div>
+
+        <button onclick="alert('i love JS')">Enter</button>
+
+        <button class="btn2">Hello World</button>
+
+        <button class="btn3">Button 3</button>
+
+        <script>
+            //Add Event Listener
+            let btn2 =  document.querySelector('.btn2')
+
+            //Make Alert function
+            function alertBtn(){
+                alert('Hello I am Button 2')
+            }
+
+            //Alert Function call
+            btn2.addEventListener('click', alertBtn)
+
+            //We can make it JS ES6 featured arrow function
+            let btn3 = document.querySelector('.btn3')
+            btn3.addEventListener('click', ()=>{alert(`Hello I'm Button 3`)})
+            //change background color by MouseOver
+            btn3.addEventListener('mouseover', ()=>{
+                btn3.style.backgroundColor = 'blue'
+                btn3.style.color = 'white'
+            })
+        </script>
+    </div>
+</body>
+</html>

@@ -23,7 +23,9 @@
 
     <h3>DOM Tag Element</h3>
     
+    <h2 class="appendEl"></h2>
 
+    <p class="createdElement">Created Element</p>
 
 
     <script>
@@ -51,6 +53,12 @@
         for(let i = 0; i < domTag.length; i++){
             domTag[i].innerHTML = 'DOM Tag Manipulated'
         }
+
+        //DOM append
+        let appendEl = document.querySelector('.appendEl')
+        let createdElement = document.createElement('p')
+
+        appendEl.append(createdElement)
 
     </script>
 </body>
